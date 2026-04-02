@@ -1,0 +1,30 @@
+# ─── AutoLabel-Indic: SLP Intent Classification Pipeline ───────────────────
+# Install with: pip install -r requirements.txt
+# For Colab, prefix each line with: !pip install <package>
+
+# ── Data & Core ──────────────────────────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# ── Visualisation ────────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── NLP / Deep Learning ─────────────────────────────────────────────────────
+tensorflow>=2.13.0          # or tensorflow-cpu for CPU-only
+datasets>=2.14.0            # HuggingFace datasets (SNIPS)
+transformers>=4.35.0        # DistilBERT, MarianMT
+tokenizers>=0.14.0
+evaluate>=0.4.0
+sacremoses>=0.0.53          # MarianMT dependency
+sentencepiece>=0.1.99       # needed by some tokenizers
+
+# ── Optional (GPU acceleration) ─────────────────────────────────────────────
+# torch>=2.0.0              # uncomment if using PyTorch backend for HuggingFace
+# accelerate>=0.24.0        # faster Trainer
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+jupyterlab>=4.0.0
+ipywidgets>=8.0.0
